@@ -1,0 +1,56 @@
+.adminEvListMain {
+  display: flex;
+  align-items: center;
+
+  padding-left: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+  justify-content: space-around;
+  cursor: pointer;
+  .adminEvNumberFlex {
+    flex-grow: 1;
+    width: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .adminEvMiddleFlex {
+    flex-grow: 7;
+  }
+
+  .adminEvBtnFlex {
+    width: 50px;
+    flex-grow: 2;
+  }
+  .adminEvTitleFlex {
+    font-size: 1.2rem;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .adminEvDateFlex {
+    font-size: 1.2rem;
+  }
+}
+
+.adminEvNumber {
+  font-size: 1.2rem;
+}
+
+.adminEvListMain:hover {
+  background-color: gray;
+}
+
+.adminEvMiddleFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 6;
+  width: 350px;
+}
+.adminEvBtnFlex {
+  flex-grow: 2;
+  margin-left: 1rem;
+  width: 100px;
+}

@@ -1,0 +1,95 @@
+.adminHouseContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .adminHouseMainDiv {
+      height: 30%;
+      text-align: center;
+      position: relative;
+      .adminHouseTitle {
+          width: 70%;
+        z-index: 3;
+        position: absolute;
+        font-size: 2rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        padding: 1.5rem;
+        background-color: white;
+        opacity: 0.6;
+      }
+    }
+  }
+  
+  .adminHouseDetailDiv {
+     display: flex;
+    justify-content: space-around;
+    
+  }
+.adminKaKaoHouse{
+    width: 40%;
+}
+
+.adminHousePics{
+    text-align: center;
+    width: 55%;
+    background-color: gray;
+}
+
+.adminAddressText{
+    font-size : 1.1rem
+}
+  .carousel-inner {
+    width: 40%;
+  }
+  .leftDetailImageBtn {
+    width: 40px;
+  }
+  
+  .rightDetailImageBtn {
+    width: 40px;
+  }
+  
+  .adminDetailHouseInfoContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .adminDetailHouseInfoUpper {
+    display: flex;
+  
+    justify-content: center;
+  }
+  
+  .adminDetailHouseInfoUpperDiv {
+      border: 1px solid gray;
+    margin: 0 4rem;
+    width: 500px;
+  }
+  
+  .scoreBtns {
+    width: 50%;
+  }
+  
+  .adminDateRange {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .adminDateDash {
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .adminAddressText {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+
+  

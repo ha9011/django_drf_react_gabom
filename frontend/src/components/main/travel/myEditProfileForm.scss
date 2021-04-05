@@ -1,0 +1,33 @@
+.myImgCardEdit {
+  margin: 10px auto 0 auto;
+  width: 50%;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  border-radius: 1rem;
+  display: block;
+}
+
+.profileInput {
+  display: none;
+}
+
+.tooltip-inner,
+.Tooltip {
+  background-color: white;
+  border: 1px solid black;
+}
+#Tooltip {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.profileImgBtn {
+  margin: 2px;
+}
+
+.profileModalBtns {
+  float: right;
+  button {
+    margin-right: 1.2rem;
+  }
+}

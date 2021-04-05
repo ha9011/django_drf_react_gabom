@@ -1,0 +1,38 @@
+.bookListMain {
+  display: flex;
+  align-items: center;
+
+  padding-left: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+  justify-content: space-around;
+  cursor: pointer;
+  .bookNumberFlex {
+    width: 40px;
+    font-size: 1.2rem;
+  }
+
+  .bookTitleFlex {
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .bookDateFlex {
+    font-size: 1.2rem;
+  }
+}
+.bookMiddleFlex {
+  width: 300px;
+}
+.bookEndFlex {
+  width: 100px;
+}
+.bookNumber {
+  font-size: 1rem;
+}
+
+.travelMyPlanListMain:hover {
+  background-color: gray;
+}

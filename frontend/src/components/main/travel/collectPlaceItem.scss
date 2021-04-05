@@ -1,0 +1,52 @@
+.placeUnit {
+  padding: 0.3rem;
+  margin: 0.2rem;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+}
+
+.placeUpDown {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 8%;
+  margin-right: 0rem;
+
+  > div:hover {
+    border: 1px solid black;
+  }
+}
+.btnArea {
+  margin-right: 0.5rem;
+}
+.placeTurn {
+  width: 100%;
+}
+
+.placeImg {
+  width: 10%;
+  margin-right: 0.5rem;
+}
+
+.placeName {
+  width: 15%;
+  margin-right: 0.5rem;
+}
+
+.placeLocation {
+  width: 40%;
+  margin-right: 0.5rem;
+}
+
+.placeMemo {
+  width: 7%;
+  font-size: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.palceDelete {
+  font-size: 2rem;
+  width: 5%;
+  cursor: pointer;
+}

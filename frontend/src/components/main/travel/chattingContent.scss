@@ -1,0 +1,30 @@
+.friendMessageDiv {
+  margin-left: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.friendImg {
+  border-radius: 10px;
+}
+.friendName {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.friendMessageInfoDiv {
+  display: flex;
+  flex-direction: row;
+}
+.friendMessage {
+  max-width: 300px;
+  font-weight: bold;
+  padding: 10px;
+  margin-right: 10px;
+  display: inline-block;
+
+  border: 1px solid antiquewhite;
+  background-color: antiquewhite;
+  border-radius: 5px;
+  word-break: break-all;
+}

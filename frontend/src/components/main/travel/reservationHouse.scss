@@ -1,0 +1,137 @@
+.houseContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .houseMainDiv {
+    height: 30%;
+    text-align: center;
+    position: relative;
+    .houseTitle {
+      z-index: 3;
+      position: absolute;
+      font-size: 3rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      padding: 2rem;
+      background-color: white;
+      opacity: 0.6;
+    }
+  }
+}
+
+.houseDetailDiv {
+  background-color: gray;
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+}
+.carousel-inner {
+  width: 40%;
+}
+.leftDetailImageBtn {
+  width: 40px;
+}
+
+.rightDetailImageBtn {
+  width: 40px;
+}
+
+.detailHouseInfoContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailHouseInfoUpper {
+  display: flex;
+
+  justify-content: center;
+}
+
+.detailHouseInfoUpperDiv {
+  margin: 0 4rem;
+  width: 500px;
+}
+
+.scoreBtns {
+  width: 50%;
+}
+
+.dateRange {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.dateDash {
+  width: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.addressText {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.detailHouseInfobotDiv {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 5rem 0 5rem;
+}
+.noticeDiv,
+.repleDiv {
+  margin: 0 3rem;
+  width: 35%;
+  font-size: 35px;
+  padding: 2px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.boardActive {
+  background-color: skyblue;
+}
+
+.noticeContent {
+  margin-top: 1.2rem;
+}
+.noticeModalTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.noticeContentDiv,
+.repleContentDiv {
+  display: inline-block;
+  margin: 0 auto;
+  width: 69%;
+  text-align: center;
+  border: 1px solid black;
+  height: 500px;
+  overflow: auto;
+}
+
+.QnATitle {
+  width: 100%;
+}
+
+.repleModalDiv {
+  display: flex;
+}
+
+.repleModalBtn {
+  height: 90%;
+}
+
+.repleModalActive {
+  display: flex;
+}
+
+.notRepleModalActive {
+  display: none;
+}

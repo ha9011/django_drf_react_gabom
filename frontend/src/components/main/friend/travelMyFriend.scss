@@ -1,0 +1,29 @@
+.friendMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.friendDiv {
+  width: 40%;
+  margin: 1rem;
+  height: 430px;
+  border: 1px solid gray;
+  border-radius: 2rem;
+  overflow: auto;
+}
+
+.searchTitle {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  opacity: 0.7;
+}
+
+.searchBar {
+  text-align: center;
+}

@@ -1,0 +1,6 @@
+mysqlclient #DB 연결
+django~=3.0.0
+pillow
+djangorestframework
+django-cors-headers
+djangorestframework-jwt

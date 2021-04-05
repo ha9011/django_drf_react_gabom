@@ -1,0 +1,58 @@
+.travelMyPlanListMain {
+  display: flex;
+  align-items: center;
+
+  padding-left: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+  justify-content: space-around;
+  cursor: pointer;
+  .planNumberFlex {
+    flex-grow: 1;
+    width: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .planTitleFlex {
+    font-size: 1.2rem;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .planDateFlex {
+    font-size: 1.2rem;
+  }
+}
+
+.planNumber {
+  font-size: 1.2rem;
+}
+
+.travelMyPlanListMain:hover {
+  background-color: gray;
+}
+
+.planMiddleFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 6;
+}
+.planBtnFlex {
+  flex-grow: 2;
+  width: 100px;
+}
+
+.shareInvisible {
+  visibility: hidden;
+}
+
+.invisibleShareReject {
+  visibility: hidden;
+}
+
+.planApplyFlex {
+  margin: 0 10px;
+}

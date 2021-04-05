@@ -1,0 +1,26 @@
+.memberDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.memberDiv:hover {
+  border: 1px solid gray;
+}
+.memberDivImg {
+  flex-grow: 1;
+  margin-left: 2rem;
+  width: 60px;
+  border-radius: 10px;
+}
+.memberImg {
+  border-radius: 10px;
+}
+.memberDivName {
+  flex-grow: 1;
+  width: 60px;
+}
+.memberDivIntro {
+  width: 200px;
+  flex-grow: 3;
+}

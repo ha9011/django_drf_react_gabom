@@ -1,0 +1,46 @@
+.chattingContainner {
+  margin: 0.6rem auto 0 auto;
+  width: 90%;
+  height: 550px;
+}
+.chattingContent {
+  width: 100%;
+  border: 1px solid black;
+  height: 500px;
+  overflow: auto;
+  background-color: skyblue;
+}
+
+.chattingInput {
+  width: 80%;
+}
+.chattingBtn {
+  width: 5.5rem;
+}
+
+.members {
+  display: flex;
+  justify-content: space-around;
+}
+
+.planMemberList1 {
+  margin-top: 10px;
+  width: 50%;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 2rem;
+}
+
+.planMemberList2 {
+  margin-top: 10px;
+  width: 45%;
+  height: 300px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 2rem;
+}
+
+.kickoutBtn {
+  margin-top: 2rem;
+}

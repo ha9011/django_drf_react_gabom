@@ -1,0 +1,50 @@
+.firstMain {
+  display: flex;
+  height: 1000px;
+
+  .gabomBackground {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    .videoBack {
+      width: 100%;
+      z-index: 1;
+    }
+  }
+
+  .inputArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40%;
+    .formArea {
+      border-radius: 10px;
+      border: 2px solid gray;
+      padding: 20px;
+      width: 80%;
+      height: 35%;
+    }
+  }
+}
+
+.mainTitle {
+  display: inline;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -100%);
+  z-index: 2;
+}
+
+.firstBtn {
+  margin: 10px;
+}

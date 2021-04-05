@@ -1,0 +1,32 @@
+.choiceMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.choicePlacePic {
+  display: flex;
+}
+
+.choicePics {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px 10px 5px 10px;
+  text-align: center;
+  width: 450px;
+  display: inline;
+  float: left;
+}
+
+.choiceTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+}
+
+.choiceBtns {
+  float: right;
+}
+
+.loading {
+  text-align: center;
+}

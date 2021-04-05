@@ -1,0 +1,33 @@
+.travelMainDivFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.topContainDiv {
+  padding: 20px; // 지우기
+  border: 1px solid gray;
+  height: 600px;
+  display: flex;
+}
+
+.botContainDiv {
+  height: 500px;
+  display: flex;
+}
+
+.bestSharePlan {
+  border: 1px solid gray;
+  width: 40%;
+}
+
+.bestShareShow {
+  border: 1px solid gray;
+  width: 60%;
+}
+
+.botDivContain {
+  border: 1px solid gray;
+  width: 97%;
+  height: 350px;
+  margin: 2% 1.5%;
+}

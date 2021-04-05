@@ -1,0 +1,38 @@
+.searchContain {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchTitle {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+.title1 {
+  text-align: center;
+  flex-grow: 3;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.title2 {
+  flex-grow: 1;
+}
+
+.title3 {
+  flex-grow: 1;
+}
+
+.searchInput {
+  width: 80%;
+  height: 37px;
+}
+.searchBtn {
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.searchResultList {
+  text-align: center;
+}

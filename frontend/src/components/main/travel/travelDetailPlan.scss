@@ -1,0 +1,68 @@
+.detailContainer {
+  border: 1px solid gray;
+  margin: 10px;
+  height: 98%;
+}
+
+.titleAndDate {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.showPlanMap {
+  margin: 1.5rem auto 0 auto;
+  width: 90%;
+  height: 450px;
+  background-color: gray;
+}
+
+.nthDetailPlanContainer {
+  margin-top: 1rem;
+}
+
+.nthAndButton {
+  font-size: 1.5rem;
+  text-align: center;
+
+  > * {
+    margin: 10px;
+  }
+}
+
+.planNthMoveBtn:hover,
+.changeDatePlan:hover {
+  cursor: pointer;
+  border: 1px solid gray;
+}
+.changeDatePlan {
+  margin-left: 20px;
+  font-size: 2rem;
+}
+.nthDetailPlanList {
+  display: flex;
+  margin: 0 auto 0 auto;
+  width: 90%;
+  height: 300px;
+  border: 1px solid gray;
+}
+
+.detailPlanDiv {
+  width: 90%;
+  height: 100%;
+}
+
+.detailPlanButtonDiv {
+  border-left: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 10%;
+}
+
+.reservationHouse,
+.registerPlace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

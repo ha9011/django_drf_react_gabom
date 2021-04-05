@@ -1,0 +1,75 @@
+.mainHR {
+  display: flex;
+  align-items: center;
+  .photoHR {
+    text-align: center;
+    flex: 1;
+    height: 100%;
+
+    overflow: hidden;
+
+    .photoTitle1 {
+      position: absolute;
+      z-index: 10;
+      top: 40%;
+      left: 20rem;
+      width: 10px;
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+    .photoTitle2 {
+      position: absolute;
+      z-index: 10;
+      top: 82%;
+      left: 23rem;
+      width: 10px;
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+    .photoImg {
+      opacity: 0.5;
+      height: 1200px;
+    }
+  }
+
+  .formDiv {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+
+    flex: 1;
+
+    .formHR {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.detailHouse {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  li {
+    display: inline-block;
+  }
+}
+
+.formTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mainHouseImg {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.detailHouseImg {
+  text-align: center;
+}
+
+#myMap {
+  margin: 0 auto;
+}

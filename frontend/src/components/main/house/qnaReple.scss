@@ -1,0 +1,30 @@
+.qnaRepleDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.qnaRepleLeft {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.qnaRepleRight {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 9;
+}
+
+.qnaRepleModalContent {
+  display: flex;
+}
+.qnaRepleModalDate {
+  margin-top: -7px;
+  text-align: right;
+  font-size: 0.7rem;
+  width: 90%;
+}
+
+.repleActiveBtn {
+  display: none;
+}

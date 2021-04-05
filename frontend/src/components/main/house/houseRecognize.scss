@@ -1,0 +1,59 @@
+.houseInfoFlexDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.houseInfoDiv {
+  border: 1px solid gray;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 40%;
+  height: 800px;
+
+  > h2 {
+    margin: 1rem;
+  }
+  > div {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+    }
+  }
+}
+
+.regiHouse {
+  margin-left: 5%;
+}
+
+.houseManageRow {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+.houseManageRowImg {
+  width: 100px;
+}
+.houseManageRowTitle {
+  width: 200px;
+}
+
+.houseManageRowState {
+  width: 150px;
+}
+
+.houseManageRowBtn {
+  button {
+    margin: 0 2px;
+  }
+}
+
+.houseWaitList {
+  overflow: auto;
+  height: 700px;
+}

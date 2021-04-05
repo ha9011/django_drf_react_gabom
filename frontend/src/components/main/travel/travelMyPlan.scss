@@ -1,0 +1,83 @@
+.myPlanMain {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .myPlanMake {
+    flex-grow: 15;
+    height: 15%;
+    background-color: transparent;
+
+    Button {
+      margin: 10px;
+    }
+  }
+
+  .myPlanListContainer {
+    flex-grow: 85;
+    height: 85%;
+    background-color: transparent;
+    display: flex;
+
+    > div {
+      padding: 20px;
+      width: 50%;
+    }
+  }
+}
+
+.planListTab {
+  width: 50%;
+  text-align: center;
+}
+.activePlanList {
+  border: 1px solid black;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.planListContent {
+  margin-top: 2rem;
+}
+// plan member 창
+.memberInPlanTitle {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.memberContainer {
+  margin: 2rem auto;
+  width: 70%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 400px;
+  overflow: auto;
+}
+
+.planBtns {
+  text-align: center;
+
+  > button {
+    width: 120px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+}
+
+tbody .text-muted {
+  background-color: rgb(238, 237, 237);
+  cursor: pointer;
+}
+
+tbody td {
+  background-color: rgb(136, 183, 236);
+}
+
+.shareInputs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

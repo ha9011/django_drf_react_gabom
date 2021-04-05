@@ -1,0 +1,19 @@
+.houseNav {
+  display: flex;
+  text-align: center;
+  font-size: 1.3rem;
+  > div {
+    flex-grow: 1;
+
+    > a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .houseMenu:hover {
+    border: 1px gray solid;
+    transform: scale(1.1);
+    transition: transform 0.35s;
+  }
+}

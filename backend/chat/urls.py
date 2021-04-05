@@ -1,0 +1,15 @@
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib import admin
+from django.urls import path, include
+from . import views
+
+
+urlpatterns = [
+    path("save/", views.ChattingView.as_view(), name="chatsave"),
+    path(
+        "getContent/<int:planId>/<int:step>",
+        views.ChattingView.as_view(),
+        name="chatsave",
+    ),
+]

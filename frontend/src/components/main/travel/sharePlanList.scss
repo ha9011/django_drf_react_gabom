@@ -1,0 +1,33 @@
+.sharePlanListMain {
+  display: flex;
+  align-items: center;
+
+  padding-left: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+  justify-content: space-around;
+  cursor: pointer;
+  .shareNumberFlex {
+    width: 10%;
+    font-size: 1.2rem;
+  }
+
+  .sharePlanTitleFlex {
+    font-size: 1.2rem;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sharePlanDateFlex {
+    font-size: 1.2rem;
+  }
+}
+
+.shareNumber {
+  font-size: 1.2rem;
+}
+
+.sharePlanListMain:hover {
+  background-color: grey;
+}

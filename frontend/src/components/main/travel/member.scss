@@ -1,0 +1,30 @@
+.memberRow {
+  margin: 0.3rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.memberImg {
+  flex-grow: 1;
+}
+.memberName {
+  width: 100px;
+  flex-grow: 3;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+}
+.memberBtnDiv {
+  width: 50px;
+  flex-grow: 3;
+}
+
+.memberBtn {
+  width: 60px;
+  padding: 0;
+}
+
+.memberXX {
+  visibility: hidden;
+}

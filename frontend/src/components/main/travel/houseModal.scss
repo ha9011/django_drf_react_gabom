@@ -1,0 +1,31 @@
+.modalHouseList {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.houseCotainer {
+  border-radius: 10px;
+  width: 32%;
+  margin: 5px;
+  padding: 10px;
+}
+
+.houseCotainer:hover {
+  border: 1px solid gray;
+}
+
+.houseTitle {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.houseAddress {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.score {
+  display: flex;
+  justify-content: space-around;
+}

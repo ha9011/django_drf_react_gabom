@@ -1,0 +1,47 @@
+.myHistoryMain {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.historyContainer {
+  width: 45%;
+}
+
+.historyContent {
+  margin: 2rem auto;
+  width: 80%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 800px;
+  overflow: auto;
+}
+
+.historyBookContent {
+  margin: 2rem auto;
+
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 800px;
+  overflow: auto;
+}
+// plan member 창
+.historyTitle {
+  text-align: center;
+
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.1rem;
+  > a {
+    padding-top: 1rem;
+    height: 60px;
+  }
+}
+
+.applyShaerPlanBtn {
+  margin-left: 10px;
+}

@@ -1,0 +1,49 @@
+.mainPageMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainHeader {
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 auto;
+}
+
+.mainContainer {
+  flex: 0 1 auto;
+}
+
+.mainFooter {
+  flex: 0 1 auto;
+  height: 10vh;
+}
+
+.logout {
+  font-size: 2rem;
+}
+
+.logoutDiv {
+  display: inline;
+  position: relative;
+  left: 37%;
+  top: 30%;
+  font-size: 2rem;
+}
+
+.footerContext {
+  font-size: 0.8rem;
+  width: 50%;
+  text-align: center;
+  margin: 3rem auto 3rem auto;
+}
+
+.toastDiv {
+  display: inline;
+  position: relative;
+  left: -36%;
+  top: 40%;
+  font-size: 2rem;
+}

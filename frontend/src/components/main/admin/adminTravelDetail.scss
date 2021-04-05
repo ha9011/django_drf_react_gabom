@@ -1,0 +1,20 @@
+.adminDetailContainer{
+    padding: 5px;
+}
+.adminTitleAndDate{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.adminDetailContainer{
+    
+    height: auto;
+}
+
+
+.adminPlanEvBtns{
+    float: right;
+    > button{
+        margin : 0 10px;
+    }
+}

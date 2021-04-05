@@ -1,0 +1,25 @@
+.modalPlaceList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  > div {
+    width: 30%;
+    padding: 0.5rem;
+  }
+}
+
+.placeSpinner {
+  margin: 0 auto;
+}
+
+.placeSearchTopInputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.findPlace {
+  .modal-title {
+    width: 100%;
+  }
+}

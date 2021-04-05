@@ -1,0 +1,17 @@
+.shareModalBody {
+  display: flex;
+}
+
+.shareListBody {
+  width: 40%;
+  height: 700px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.shareDetailBody {
+  width: 60%;
+  height: 700px;
+  border: 1px solid gray;
+  overflow: auto;
+}

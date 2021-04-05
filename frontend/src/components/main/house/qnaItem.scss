@@ -1,0 +1,38 @@
+.repleDivContain {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.qnaBoardDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+.qnaBoardDiv:hover {
+  border: 1px solid black;
+}
+
+.qnaBoardDivOrderDiv {
+  flex-grow: 0.5;
+}
+
+.qnaBoardUserDiv {
+  flex-grow: 0.5;
+}
+
+.qnaBoardTitleDiv {
+  flex-grow: 6;
+  width: 150px;
+  font-size: 1.5rem;
+}
+
+.qnaBoardDateDiv {
+  width: 100px;
+  flex-grow: 2;
+}
+
+.qnaBoardImgDiv {
+  width: 100px;
+  flex-grow: 1;
+}

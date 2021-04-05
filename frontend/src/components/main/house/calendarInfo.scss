@@ -1,0 +1,32 @@
+.sat {
+  color: blue;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.sun {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.nor {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.dayContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.activeCalendar {
+  background-color: greenyellow;
+}
+.activeCalendar:hover {
+  border: black 1px solid;
+}
+.contentDay {
+  text-align: center;
+}
