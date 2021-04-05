@@ -9,6 +9,7 @@ class Chatting(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="planChatting"
     )
+    # 여행 번호
     planNo = models.CharField(max_length=100)
     message = models.TextField(default="", blank=True)
     created_at = models.DateTimeField(auto_now_add=True)

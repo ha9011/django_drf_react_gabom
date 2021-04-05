@@ -21,7 +21,7 @@ User = get_user_model()
 class FriendListView(APIView):
     pass
 
-
+# 친구 검색
 class SearchByPhone(APIView):
     def get(self, request, phone):
         print(phone)
@@ -30,7 +30,7 @@ class SearchByPhone(APIView):
         serializer = SearchByPhoneSerializer(user, many=True)
         return Response(serializer.data, status=201)
 
-
+# 친구 검색
 class SearchById(APIView):
     def get(self, request, id):
         print("== SearchById == ")
@@ -82,7 +82,7 @@ class SearchById(APIView):
 
         return Response(result, status=201)
 
-
+# 요청 목록
 class ApplyById(APIView):
     def post(self, request):
         print(request.data)
@@ -108,7 +108,7 @@ class ApplyById(APIView):
         serializer = ApplyListFromMeSerializer(data, many=True)
         return Response(serializer.data, status=201)
 
-
+# 요청 취소
 class ApplyCancelById(APIView):
     def post(self, request):
         print(request.data)
@@ -129,7 +129,7 @@ class ApplyCancelById(APIView):
 
         return Response([], status=201)
 
-
+# 전체 친구목록
 class FriendTotlaInfo(APIView):
     def get(self, request):
         print(request.user.pk)
@@ -233,6 +233,7 @@ class AppliedAgree(APIView):
         return Response(newFriend.data, status=201)
 
 
+# 친구 삭제
 class FriendDelete(APIView):
     def post(self, request):
         print(request.data)

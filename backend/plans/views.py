@@ -81,22 +81,17 @@ class MakePlanView(APIView):
 
 
 # 신청할 계획 플랜
-# 여행 계획 만들기
 class WillApplyPlanView(APIView):
     def put(self, request):
         print("여행계획 update")
         planId = request.data["planId"]
-        print(planId)
-        print(request.user.pk)
+
         myPlanList = Plan.objects.get(user=request.user.pk, pk=planId, share=0)
-        print("1")
-        print(myPlanList)
+
+        # 신청시 1번 상태로
         myPlanList.share = 1
-        print("2")
-        print(myPlanList)
+
         myPlanList.save()
-        print("3")
-        print(myPlanList)
 
         serializer1 = PlanListInfoSerializer(myPlanList)
         print(serializer1.data)
@@ -111,7 +106,6 @@ class WillApplyPlanView(APIView):
         myPlanList = Plan.objects.filter(user=request.user.pk, share=0)
 
         serializer1 = PlanListInfoSerializer(myPlanList, many=True)
-        print(serializer1.data)
 
         return Response({"myPlan": serializer1.data}, status=201)
 
@@ -122,20 +116,15 @@ class CancelApplyPlanView(APIView):
         print("여행계획 update")
         planId = request.data["planId"]
         shareType = request.data["shareType"]
-        print(planId)
-        print(request.user.pk)
+
         myPlanList = Plan.objects.get(user=request.user.pk, pk=planId)
-        print("1")
-        print(myPlanList)
+
+        # 초기화
         myPlanList.share = 0
-        print("2")
-        print(myPlanList)
+
         myPlanList.save()
-        print("3")
-        print(myPlanList)
 
         serializer1 = PlanListInfoSerializer(myPlanList)
-        print(serializer1.data)
 
         if shareType == 2:
             print("share 부분 삭제")
@@ -170,14 +159,11 @@ class ApplyPlanRejectView(APIView):
         print(request.data)
         print(planId)
         plan = Plan.objects.get(pk=planId, share=1)
-        print("1")
-        print(plan)
+
         plan.share = 3  # 거절
-        print("2")
-        print(plan)
+
         plan.save()
-        print("3")
-        print(plan)
+
         check = PlanRejectReaSon.objects.filter(plan=plan).exists()
         if check:
             PlanRejectReaSon.objects.filter(plan=plan).delete()
@@ -188,8 +174,7 @@ class ApplyPlanRejectView(APIView):
 
     def get(self, request, planId):
         print("== 운영자의 여행계획 거절 이유 취득==")
-        print(request.data)
-        print(planId)
+
         plan = Plan.objects.get(pk=planId, share=3)
 
         reject = PlanRejectReaSon.objects.get(plan=plan)
@@ -200,34 +185,27 @@ class ApplyPlanRejectView(APIView):
 
 
 # 운영자의 승인
-
-
 class ApplyPlanAgreeView(APIView):
     @transaction.atomic
     def post(self, request, planId):
         print("== 운영자의 여행계획 승인==")
-        print(request.data)
-        print(planId)
+
         # 공유할 플랜
         plan = Plan.objects.get(pk=planId, share=1)
         start_date = str(plan.start_date).split("-")
         end_date = str(plan.end_date).split("-")
+        # yyyy mm dd 취득하기
         s_date = date(
             int(start_date[0]), int(start_date[1]), int(start_date[2])
         )  # date 객체1
         e_date = date(int(end_date[0]), int(end_date[1]), int(end_date[2]))  # date 객체2
-        print("==날짜==")
-        print(s_date)
-        print(e_date)
+
         date_diff = e_date - s_date
         date_range = date_diff.days + 1
 
         plan.share = 2  # 승인
-        print("2")
-        print(plan)
+
         plan.save()
-        print("3")
-        print(plan)
 
         # 새로 만들어질 공유 플랜
         share_plan = SharePlan.objects.create(
@@ -239,6 +217,8 @@ class ApplyPlanAgreeView(APIView):
             range_date=date_range,
         )
 
+        # 1. planDate -> shareDate로 복사
+        # 2. 각 Date에 각 detail 취득 -> shareDetail 복사
         plandate = PlanDate.objects.filter(plan=plan).prefetch_related("detailPlace")
         plan_value = plandate.values(
             "pk",
@@ -280,7 +260,7 @@ class ApplyPlanAgreeView(APIView):
             if detailPlace == None:  # 빈 Detail
                 continue
             else:
-                if place_type == "1":  # 숙소  = 1 일때 2로 변경 (추천)
+                if place_type == "1":  # 숙소  = 1 일때 2로 변경 // 공유 계획에선 추천 상태로 보여주기 위함
                     ShareDetail.objects.create(
                         share_plan_date=spd,
                         move_turn=move_turn,
@@ -328,6 +308,7 @@ class EvaluatePlanView(APIView):
         return Response({"myPlan": serializer1.data}, status=201)
 
 
+# 여행 각 날짜의 리스트
 class DetailPlanView(APIView):
     def get(self, request, travelNo):
         print("여행 번호 : " + str(travelNo))
@@ -380,16 +361,18 @@ class DetailPlanView(APIView):
         )
 
 
+# API를 통해 여행 지역번호 취득해서, 해당 정보 가져오기
 class AreaPlanView(APIView):
     def get(self, request, areacode):
         print("여행 지역번호 : " + str(areacode))
 
         test = getSiGunGuCodeData(str(areacode))
-        print("test")
+
         print(test)
         return Response(test, status=201)
 
 
+# API를 통해 여행 지역번호와 시군구, 페이지 정보를 통해 해당 정보 가져오기
 class SiGunGuPlanView(APIView):
     def get(self, request, areacode, sigungu, page):
         print("여행 areacode : " + str(areacode))
@@ -402,6 +385,7 @@ class SiGunGuPlanView(APIView):
         return Response(test, status=201)
 
 
+# 해당 여행지 클릭시 정보 취득
 class PlaceIdView(APIView):
     def get(self, request, placeId):
         print("여행 placeId : " + str(placeId))
@@ -510,7 +494,7 @@ class DetailDateView(APIView):
 # 맴버 강퇴
 
 # permission_classes = (AllowAny,)
-# 왜 delete로 하면 안되는지 모르겠음
+# 왜 delete로 하면 안되는지 모르겠음  => axios에서 해결 할 수 있었음. TODO 수정하기
 class KickOutsView(APIView):
     def post(self, request, memberId, planNo):
         print("====KickOutView===")

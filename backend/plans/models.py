@@ -9,10 +9,13 @@ class Plan(models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="createUser"
     )
+    # 제목
     plan_title = models.CharField(max_length=30)
+    # 공유 여부 (0 - 아무상태 아님, 1- 공유상태)
     is_share = models.BooleanField(default=False)
+    # 공유된 아이디
     share_id = models.IntegerField(default=0, blank=True)
-
+    # 심사 상태 1-대기 2-승인 3-거절
     share = models.IntegerField(default=0, blank=True)
     location = models.CharField(max_length=30, blank=True)
     areacode = models.CharField(max_length=2, blank=True)
@@ -22,6 +25,7 @@ class Plan(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
 
+# 여행 거절 이유
 class PlanRejectReaSon(models.Model):
     objects = models.Manager()
     plan = models.OneToOneField(
@@ -32,6 +36,7 @@ class PlanRejectReaSon(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
 
+# 여행 맴버
 class PlanMember(models.Model):
     objects = models.Manager()
     plan = models.ForeignKey(Plan, on_delete=models.CASCADE, related_name="member")
@@ -45,6 +50,7 @@ class PlanMember(models.Model):
         unique_together = (("plan", "user"),)
 
 
+# 여행 날짜
 class PlanDate(models.Model):
     objects = models.Manager()
     plan = models.ForeignKey(Plan, on_delete=models.CASCADE, related_name="schedule")
@@ -57,6 +63,7 @@ class PlanDate(models.Model):
         ]
 
 
+# 여행 디테일
 class DetailPlan(models.Model):
     objects = models.Manager()
     plan_date = models.ForeignKey(
